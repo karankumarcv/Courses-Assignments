@@ -1,0 +1,211 @@
+:root {
+    --primary: #0057FF;
+    --secondary: #191919;
+    --third: #FF8C00;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    background-color: F9F9F9;
+}
+
+/* Global CSS */
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-bar {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+#nav-bar ul {
+    width: 20%;
+}
+
+#nav-bar>#brand {
+    color: var(--primary);
+    font-weight: 500;
+    padding: 0px 40px;
+
+
+}
+
+#nav-bar>ul>li>a {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.header-title {
+    padding-top: 80px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    margin: 20px 0px;
+}
+
+#submit {
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: var(--third);
+    margin: 30px 0px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#features,
+#pricing {
+    display: flex;
+    max-width: 70vw;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+#features figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature-img {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    color: var(--third);
+}
+
+
+
+#pricing {
+    margin: 50px 0px;
+    flex-direction: row;
+}
+
+.card {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    background-color: white;
+}
+
+.price {
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.card-header {
+    background-color: var(--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card button {
+    /* width: 200px; */
+    padding: 10px 60px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgb(209, 209, 209);
+}
+
+footer .labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .labels ul {
+    padding-left: 0px;
+}
+
+@media (max-width:600px) {
+    ul {
+        display: none;
+    }
+
+    .header-title h2 {
+        max-width: 100vw;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
+        font-size: 1rem;
+    }
+    #features{
+        padding: 10px;
+    }
+ 
+#features figure{
+        flex-direction: column;
+    }
+.feature-img{
+    width: auto;
+    height: 100px;
+    padding: 0;
+}
+#pricing{
+    padding: 20px;
+    flex-direction:column;
+    margin: 0;
+}
+.card{
+    width: 70%;
+}
+}

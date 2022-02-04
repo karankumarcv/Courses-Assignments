@@ -1,0 +1,75 @@
+/* Write CSS code here */
+:root {
+    --primary: #1E1F26;
+    --secondary: #F1F1F1;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    min-width: 250px;
+    height: 100vh;
+    border-right: 3px grey solid;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    padding: 0 20px;
+    background-color: white;
+}
+
+nav ul {
+    height: 100%;
+    padding: 0px;
+    overflow-y: scroll;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 15px 40px;
+    border-bottom: 1px black solid;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    background-color: #0a0a0a10;
+}
+
+main {
+    min-height: 200vh;
+}
+
+#main-doc {
+    padding: 20px 20px;
+}
+
+header {
+    font-size: x-large;
+}
+
+@media (max-width:600px) {
+    body {
+        flex-direction: column;
+
+    }
+
+    nav {
+        height: 50vh;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+
+    }
+
+}

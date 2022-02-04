@@ -1,0 +1,15 @@
+nav {
+  height: 80px;
+}
+.row-content {
+  margin: 100px 0px;
+}
+.features-boxed {
+  padding: 60px 0px;
+  background-color: #eef4f7;
+}
+
+footer {
+  padding: 20px 0px;
+  background: #eef4f7;
+}

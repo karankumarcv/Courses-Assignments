@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Population Survery Form</h1>
+            <p id="description" class="description text-center">
+                Please give the time to your goverment who is working hard for you
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>How Many People are in your family ?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select Number of family members</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="More">More than 5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Are you Corona Positive</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    How Many people have vacinated in your family ?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select the number of people vacinated</option>
+                    <option value="all">All of them</option>
+                    <option value="few">Few Left</option>
+                    <option value="no">No One</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Lorem Ipsum or anything else
+                </p>
+                <label><input name="prefer" value="0" type="checkbox" class="input-checkbox" />Lorem</label>
+                <label><input name="prefer" value="1" type="checkbox" class="input-checkbox" />Ipsum</label>
+                <label><input name="prefer" value="2" type="checkbox" class="input-checkbox" />Lorem</label>
+                <label><input name="prefer" value="3" type="checkbox" class="input-checkbox" />Ipsum</label>
+               
+
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

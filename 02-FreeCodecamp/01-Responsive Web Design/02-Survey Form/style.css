@@ -1,0 +1,44 @@
+/* Write CSS code here */
+body{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: ;
+
+}
+header{
+    text-align: center;
+}
+#survey-form{
+    background-color: rgb(194, 164, 126);
+    padding: 30px;
+    border-radius: 5px;
+    width: 500px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+label{
+    padding: 10px 0;
+    font-weight: 600;
+    color:rgb(41, 34, 25);
+}
+input,select,textarea{
+    outline: none;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+button{
+    border: none;
+    padding: 20px 0px;
+    background-color:rgb(41, 34, 25);
+    color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
